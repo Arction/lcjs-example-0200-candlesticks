@@ -90,9 +90,9 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[AxisTickStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#axistickstrategies
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/chartxy.html
-[OHLCFigures]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#ohlcfigures
+[AxisTickStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#axistickstrategies
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/chartxy.html
+[OHLCFigures]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#ohlcfigures
 [OHLCGenerator]: https://arction.github.io/xydata/classes/ohlcgenerator.html
-[OHLCSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/chartxy.html#addohlcseries
-[XOHLC]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#xohlc
+[OHLCSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/chartxy.html#addohlcseries
+[XOHLC]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#xohlc
