@@ -22,6 +22,7 @@ const {
 const dateOrigin = new Date(2018, 0, 1)
 
 // Create a XY Chart with DateTime X-axis using previously defined origin.
+
 const chart = lightningChart().ChartXY({
     defaultAxisXTickStrategy: AxisTickStrategies.DateTime(dateOrigin)
 })
@@ -33,14 +34,14 @@ const chart = lightningChart().ChartXY({
     })
     .setPadding({ right: 40 })
 
-// Add a OHLC series with Candlestick as type of figures.
-const series = chart.addOHLCSeries({ positiveFigure: OHLCFigures.Candlestick })
-
+// Change the title and behavior of the default Y Axis
 chart.getDefaultAxisY()
     .setTitle('USD')
     .setInterval(90, 110)
     .setScrollStrategy(AxisScrollStrategies.expansion)
 
+// Add a OHLC series with Candlestick as type of figures.
+const series = chart.addOHLCSeries({ positiveFigure: OHLCFigures.Candlestick })
 // Generate some points using 'xydata'-library.
 const dataSpan = 10 * 24 * 60 * 60 * 1000
 const dataFrequency = 1000 * 60
