@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases creation of a Candlestick-chart.
  */
 // Import LightningChartJS
