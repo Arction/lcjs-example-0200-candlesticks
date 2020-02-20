@@ -55,7 +55,7 @@ ohlcSeries.add(xohlc)
 
 add() can be called with a single XOHLC-object or with an array of them.
 
-### Anatomy of a candlestick figure
+## Anatomy of a candlestick figure
 
 Candlesticks are formed from two parts: *Body* and *Line*s. Both of these can be individually styled.
 
