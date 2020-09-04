@@ -10,7 +10,8 @@ const {
     AxisTickStrategies,
     OHLCFigures,
     emptyLine,
-    AxisScrollStrategies
+    AxisScrollStrategies,
+    Themes
 } = lcjs
 
 // Import data-generator from 'xydata'-library.
@@ -21,18 +22,25 @@ const {
 // Decide on an origin for DateTime axis.
 const dateOrigin = new Date(2018, 0, 1)
 
-// Create a XY Chart with DateTime X-axis using previously defined origin.
-
+// Create a XY Chart.
 const chart = lightningChart().ChartXY({
-    defaultAxisXTickStrategy: AxisTickStrategies.DateTime(dateOrigin)
+    // theme: Themes.dark
 })
-    .setTitle('Candlesticks Chart')
-    // Style AutoCursor using preset.
-    .setAutoCursor(cursor => {
-        cursor.disposeTickMarkerY()
-        cursor.setGridStrokeYStyle(emptyLine)
-    })
-    .setPadding({ right: 40 })
+// Use DateTime X-axis using with above defined origin.
+chart
+    .getDefaultAxisX()
+    .setTickStrategy(
+        AxisTickStrategies.DateTime,
+        (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin)
+    )
+
+chart.setTitle('Candlesticks Chart')
+// Style AutoCursor using preset.
+chart.setAutoCursor(cursor => {
+    cursor.disposeTickMarkerY()
+    cursor.setGridStrokeYStyle(emptyLine)
+})
+chart.setPadding({ right: 40 })
 
 // Change the title and behavior of the default Y Axis
 chart.getDefaultAxisY()

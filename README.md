@@ -66,12 +66,12 @@ Candlesticks are formed from two parts: *Body* and *Line*s. Both of these can be
 
 ## API Links
 
-* XY cartesian chart: [ChartXY]
-* Axis tick strategies: [AxisTickStrategies]
-* Figure types: [OHLCFigures]
-* OHLC series: [OHLCSeries]
-* XOHLC datastructure: [XOHLC]
-* OHLC generator: [OHLCGenerator]
+* [XY cartesian chart]
+* [Axis tick strategies]
+* [Figure types]
+* [OHLC series]
+* [XOHLC datastructure]
+* [OHLC generator]
 
 
 ## Support
@@ -95,10 +95,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
-[AxisTickStrategies]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#axistickstrategies
-[OHLCFigures]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#ohlcfigures
-[OHLCSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html#addohlcseries
-[XOHLC]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#xohlc
-[OHLCGenerator]: https://arction.github.io/xydata/classes/ohlcgenerator.html
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html
+[Axis tick strategies]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#axistickstrategies
+[Figure types]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#ohlcfigures
+[OHLC series]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html#addohlcseries
+[XOHLC datastructure]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#xohlc
+[OHLC generator]: https://arction.github.io/xydata/classes/ohlcgenerator.html
 
