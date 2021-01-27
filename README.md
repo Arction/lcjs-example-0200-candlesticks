@@ -95,10 +95,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/classes/chartxy.html
-[Axis tick strategies]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/globals.html#axistickstrategies
-[Figure types]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/globals.html#ohlcfigures
-[OHLC series]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/classes/chartxy.html#addohlcseries
-[XOHLC datastructure]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/globals.html#xohlc
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/chartxy.html
+[Axis tick strategies]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/globals.html#axistickstrategies
+[Figure types]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/globals.html#ohlcfigures
+[OHLC series]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/chartxy.html#addohlcseries
+[XOHLC datastructure]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/globals.html#xohlc
 [OHLC generator]: https://arction.github.io/xydata/classes/ohlcgenerator.html
 
