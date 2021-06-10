@@ -1,6 +1,6 @@
-# Candlestick Chart
+# JavaScript Candlestick Chart
 
-![Candlestick Chart](candleSticks.png)
+![JavaScript Candlestick Chart](candleSticks.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
