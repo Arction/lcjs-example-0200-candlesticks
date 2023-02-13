@@ -4,20 +4,14 @@
 // Import LightningChartJS
 const lcjs = require('@arction/lcjs')
 
+// Import xydata
+const xydata = require('@arction/xydata')
+
 // Extract required parts from LightningChartJS.
-const {
-    lightningChart,
-    AxisTickStrategies,
-    OHLCFigures,
-    emptyLine,
-    AxisScrollStrategies,
-    Themes
-} = lcjs
+const { lightningChart, AxisTickStrategies, OHLCFigures, emptyLine, AxisScrollStrategies, Themes } = lcjs
 
 // Import data-generator from 'xydata'-library.
-const {
-    createOHLCGenerator
-} = require('@arction/xydata')
+const { createOHLCGenerator } = xydata
 
 // Decide on an origin for DateTime axis.
 const dateOrigin = new Date(2018, 0, 1)
@@ -27,25 +21,21 @@ const chart = lightningChart().ChartXY({
     // theme: Themes.darkGold
 })
 // Use DateTime X-axis using with above defined origin.
-chart
-    .getDefaultAxisX()
-    .setTickStrategy(
-        AxisTickStrategies.DateTime,
-        (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin)
-    )
+chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
 
 chart.setTitle('Candlesticks Chart')
 // Style AutoCursor using preset.
-chart.setAutoCursor(cursor => {
-    cursor.disposeTickMarkerY()
+chart.setAutoCursor((cursor) => {
+    cursor.setTickMarkerYVisible(false)
     cursor.setGridStrokeYStyle(emptyLine)
 })
 chart.setPadding({ right: 40 })
 
 // Change the title and behavior of the default Y Axis
-chart.getDefaultAxisY()
+chart
+    .getDefaultAxisY()
     .setTitle('USD')
-    .setInterval(90, 110)
+    .setInterval({ start: 90, end: 110, stopAxisAfter: false })
     .setScrollStrategy(AxisScrollStrategies.expansion)
 
 // Add a OHLC series with Candlestick as type of figures.
@@ -59,6 +49,6 @@ createOHLCGenerator()
     .setStart(100)
     .generate()
     .toPromise()
-    .then(data => {
+    .then((data) => {
         series.add(data)
     })
