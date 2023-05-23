@@ -21,6 +21,9 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 _Also known as Japanese Candlestick Chart_
 
+**Please note that using LightningChart JS for Trading use cases requires a special license agreement.**
+For more information, please [contact us](https://lightningchart.com/contact/).
+
 This example shows basic implementation of candlestick chart using OHLCSeries. This type of chart is used as a trading tool to visualize price movements. A candlestick figure can represent multiple recorded values, which are packed into 4 values (open, high, low and close). This makes it useful for dynamically displaying data from longer intervals as well as shorter.
 
 OHLCSeries are created using ChartXY method.
@@ -95,10 +98,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/ChartXY.html
-[Axis tick strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/AxisTickStrategies.html
-[Figure types]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/OHLCFigures.html
-[OHLC series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/ChartXY.html#addOHLCSeries
-[XOHLC datastructure]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/types/XOHLC.html
+[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/ChartXY.html
+[Axis tick strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/variables/AxisTickStrategies.html
+[Figure types]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/variables/OHLCFigures.html
+[OHLC series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/classes/ChartXY.html#addOHLCSeries
+[XOHLC datastructure]: https://lightningchart.com/lightningchart-js-api-documentation/v4.1.0/types/XOHLC.html
 [OHLC generator]: https://arction.github.io/xydata/classes/ohlcgenerator.html
 
