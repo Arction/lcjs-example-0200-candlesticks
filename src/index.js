@@ -19,7 +19,7 @@ const dateOriginTime = dateOrigin.getTime()
 
 // Create a XY Chart.
 const chart = lightningChart().ChartXY({
-    theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
+    theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined
 })
 // Use DateTime X-axis using with above defined origin.
 chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
