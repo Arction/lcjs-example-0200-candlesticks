@@ -18,7 +18,9 @@ const dateOrigin = new Date(2018, 0, 1)
 const dateOriginTime = dateOrigin.getTime()
 
 // Create a XY Chart.
-const chart = lightningChart().ChartXY({
+const chart = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        }).ChartXY({
     theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
 })
 // Use DateTime X-axis using with above defined origin.
